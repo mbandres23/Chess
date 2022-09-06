@@ -47,7 +47,6 @@ chess_columns_Na = {1: 'a',
 # The main method validates user input, creates a chess piece,
 #  and will run one of three modes within the program: 
 #  Standard, Target, or Collector.
-main_method_not_tested = '''
 def main():
 
     # read and parse user input
@@ -95,7 +94,6 @@ def main():
         else:
             possible_moves = ', '.join(my_chess_piece.calculate_possible_moves())
             print(possible_moves)
-'''
 
 
 # This method runs Target mode where we place our chess piece,
@@ -185,7 +183,7 @@ class ChessPiece:
 class Queen(ChessPiece):
 
     piece_type = 'QUEEN' 
-    icon = '\u2655'
+    icon = 'Q'
     
     def __init__(self, position):
         super().__init__(position)
@@ -261,7 +259,7 @@ class Queen(ChessPiece):
 class Rook(ChessPiece):
 
     piece_type = 'ROOK'
-    icon = '\u2656'
+    icon = 'R'
     
     def __init__(self, position):
         super().__init__(position)
@@ -311,7 +309,7 @@ class Rook(ChessPiece):
 class Knight(ChessPiece):
 
     piece_type = 'KNIGHT'
-    icon = '\u2658'
+    icon = 'K'
     
     def __init__(self, position):
         super().__init__(position)
@@ -556,7 +554,7 @@ def set_pawns(board):
         
         # if no other piece is in the position, place the pawn and add its position to the list
         if get_position(board, pos) == '.':
-            board[ chess_columns_aN.get(pos[0])-1 ][ int(pos[1])-1 ] = '\u265F'
+            board[ chess_columns_aN.get(pos[0])-1 ][ int(pos[1])-1 ] = 'p'
             pawns.append(pos)
             
     return pawns
@@ -584,7 +582,5 @@ def get_farthest(piece):
 
 # The __name__method runs automatically when this file is run directly
 #  and calls the main method.
-name_not_tested = '''
 if __name__ == '__main__':
 		main()
-'''
