@@ -37,8 +37,14 @@ Activate collector mode by adding "--collect" to your command line statement. Th
 Example:
 $ chess.py --piece QUEEN --position e4 --collect
 
+## Additional Notes
 
 Highlights on the approach and data structures used:
 - Target Mode implements a queue-based breadth-first search.
 - Collector Mode implements a priority queue-based breadth first search. We prioritize "capture spaces" to improve efficiency of the search. Although, running Collector Mode can still be slow for the knight since it's movement on the board is non-linear.
 - For more detail, see comments in the chess.py file.
+
+Other notes:
+- Unit tests for chess program are in test_chess.py
+- Test coverage results are in test_cov1 and test_cov2 folders
+- problem_set1 contains some basic python exercises in Python Notebook format
