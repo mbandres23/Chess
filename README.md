@@ -1,14 +1,8 @@
 # pythonTest
 
-# 1
-## 2
-### 3
-#### 4
-##### 5
+## Usage
 
-Usage
-
-Standard Mode
+### Standard Mode
 
 Run chess.py from the command line with the two parameters noted below to get a list of all the potential board positions the given piece could advance to, with one move, from the given position, with the assumption there are no other pieces on the board.
 
@@ -22,7 +16,7 @@ $ chess.py --piece KNIGHT --position d2
 The response would be:  “b1, f1, b3, f3,c4, e4"
 
 
-Target Mode
+### Target Mode
 
 Activate target mode by adding "--target" to your command line statement. This will
 1. Randomly place 8 (opposing) pieces onto the board tiles.
@@ -36,7 +30,7 @@ Example:
 $ chess.py --piece QUEEN --position e4 --target
 
 
-Collector Mode
+### Collector Mode
 
 Activate collector mode by adding "--collect" to your command line statement. This will
 1. Randomly place 8 (opposing) pieces onto the board tiles.
