@@ -1,6 +1,4 @@
-# pythonTest
-
-## Usage
+# Chess Program Usage
 
 ### Standard Mode
 
